@@ -41,7 +41,7 @@ function convertToCount() {
 }
 
 async function loadModel() {
-    model = await tf.loadLayersModel('../0.416/model.json'); // 生成したモデルをロード
+    model = await tf.loadLayersModel('../model_web/model.json'); // 生成したモデルをロード
     console.log("モデルがロードされました");
 }
 
