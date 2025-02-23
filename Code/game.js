@@ -41,7 +41,7 @@ function convertToCount() {
 }
 
 async function loadModel() {
-    model = await tf.loadLayersModel('../model_web/model.json'); // 生成したモデルをロード
+    model = await tf.loadLayersModel('../0.416/model.json'); // 生成したモデルをロード
     console.log("モデルがロードされました");
 }
 
@@ -69,6 +69,7 @@ async function runModel() {
 
     // 結果を表示
     console.log(`推論結果: クラス ${predictedClass}, 信頼度: ${confidence}`);
+    document.getElementById("predictResult").innerHTML = `予測結果：${materials[predictedClass].a}・信頼度：${confidence}`
 
     return { predictedClass, confidence };
 }
