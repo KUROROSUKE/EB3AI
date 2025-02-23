@@ -455,6 +455,7 @@ function resetGame() {
     document.getElementById("p1_explain").innerHTML = "　";
     document.getElementById("p2_point").innerHTML = `ポイント：${p2_point}`;
     document.getElementById("p2_explain").innerHTML = "　";
+    document.getElementById("predictResult").innerHTML = "　";
 
     document.getElementById("generate_button").style.display = "inline";
     document.getElementById("done_button").style.display = "none";
